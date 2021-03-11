@@ -17,6 +17,11 @@
     --doordash: #F72E09;
     --uber: #2B383D;
     --venmo: #3D95CE;
+
+    --zoom_glow: #4856DD80;
+    --doordash_glow: #F72E0980;
+    --uber_glow: #2B383D80;
+    --venmo_glow: #3D95CE80;
     
     --zoom_secondary: #818CFF;
     --doordash_secondary: #FFA843;

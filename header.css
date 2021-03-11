@@ -11,7 +11,7 @@
 
     transition: background 0.8s;
 
-    z-index: 1;
+    z-index: 50;
 }
 
 .navigation_logo {
@@ -252,7 +252,7 @@
 
     display: flex;
     align-items: center;
-    z-index: 2;
+    z-index: 51;
 }
 
 .navigation_manuals .navigation_manuals_item:nth-child(2)::before {
