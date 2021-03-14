@@ -270,7 +270,7 @@ section {
         font-size: 60px;
     }
     .hero_subtitle {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 500;
         line-height: 25px;
     }
@@ -322,7 +322,7 @@ section {
         margin-bottom: -100px;
     }
 }
-
+/* 
 @keyframes animate {
     0% {
         transform: translate(0) rotate(0deg);
@@ -330,7 +330,7 @@ section {
     100% {
         transform: translate(100%) rotate(360deg);
     }
-}
+} */
 
 @media (min-width: 1025px) {
     section {
@@ -352,7 +352,7 @@ section {
         filter: blur(70px);
         z-index: 0;
 
-        animation: animate 30s ease-in-out alternate infinite ;
+        animation: animate 30s ease-in-out alternate infinite;
 
         bottom: 0;
         left: 0;
