@@ -41,6 +41,20 @@ section {
     row-gap: 10px;
 }
 
+.hero::before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982);
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: 0;
+
+    top: -40px;
+    left: 0;
+}
+
 .hero_title {
     font-family: 'Calistoga';
     font-size: 45px;
@@ -52,9 +66,8 @@ section {
 }
 
 .hero_subtitle {
-    font-family: 'Inter';
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
 
     z-index: 1;
@@ -68,9 +81,15 @@ section {
     padding: 0px 30px;
     min-height: 630px;
 
+    background: url('./images/Interact-Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -550px;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .project_logo {
@@ -78,7 +97,7 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 5px;
-    /* box-shadow: 0px 0px 10px#00000030; */
+    box-shadow: 0px 0px 15px #00000030;
 
     overflow: hidden;
 
@@ -101,11 +120,13 @@ section {
 
     font-size: 28px;
     font-weight: 700;
+    font-family: 'Calistoga';
+    white-space: pre-line;
 }
 
 .project_desc {
     margin-top: 20px;
-    padding-right: 90px;
+    padding-right: 60px;
 
     font-size: 12px;
     font-weight: 400;
@@ -190,6 +211,7 @@ section {
     padding: 7px 15px;
     border-radius: 20px;
     cursor: pointer;
+    box-shadow: 0px 0px 15px #ffffff40;
 
     font-size: 12px;
     font-weight: 600;
@@ -198,8 +220,7 @@ section {
 }
 
 .preview_button:hover {
-    transform: scale(1.04);
-    box-shadow: 0px 0px 15px var(--fade_black);
+    transform: translateY(-7px);
 }
 
 .preview_image {
@@ -338,29 +359,23 @@ section {
         height: 100vh;
     }
 
-    .hero_subtitle {
-        margin-bottom: 100px;
+    .hero {
+        height: 110vh;
     }
 
     .hero::before {
-        position: absolute;
-        content: "";
-        background: linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982);
-        width: 560px;
-        height: 560px;
-        border-radius: 50%;
-        filter: blur(70px);
-        z-index: 0;
+        top: 0;
+        left: -50px;
+    }
 
-        animation: animate 30s ease-in-out alternate infinite;
-
-        bottom: 0;
-        left: 0;
+    .hero_subtitle {
+        margin-bottom: 180px;
+        white-space: pre-line;
     }
 
     .hero_directory {
         position: absolute;
-        bottom: 15%;
+        bottom: 20%;
 
         display: flex;
         flex-direction: column;
@@ -459,32 +474,36 @@ section {
     .hero_directory_venmo:hover {        
         box-shadow: 0px 0px 30px var(--venmo_glow);
     }
-
-    
     
     .project {
         height: 100vh;
         min-height: unset;
         flex-direction: row;
         align-items: center;
+
+        background-position: unset;
+        /* box-shadow: 0px 0px 15px #00000020; */
     }
     .project_content {
         width: 50%;
+        row-gap: 25px;
     }
     .project_logo {
         width: 50%;
         order: 2;
     }
     .project_title {
-        font-size: 30px;
-        font-weight: 700;
+        font-size: 34px;
+        font-weight: 500;
     }
     .project_desc {
         font-size: 14px;
+        font-weight: 450;
         text-align: justify;
     }
     .project_button {
-        font-size: 14px;
+        font-size: 16px;
+        padding: 13px 35px;
     }
 
     .preview {
@@ -527,12 +546,13 @@ section {
     }
     
     .zoom .preview_box {
-        background: url('./images/zoom-container.png');
+        background: url('./images/zoom-container2.png');
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
         padding: 60px 45% 0px 50px;
         margin-top: 80px;
+        /* filter: drop-shadow(0px 0px 20px #4856DD60); */
     }
     .zoom .preview_logo {
         right: 10%;
@@ -544,7 +564,7 @@ section {
     }
 
     .doordash .preview_box {
-        background: url('./images/doordash-container.png');
+        background: url('./images/doordash-container2.png');
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
@@ -561,7 +581,7 @@ section {
     }
 
     .uber .preview_box {
-        background: url('./images/uber-container.png');
+        background: url('./images/uber-container2.png');
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
@@ -577,7 +597,7 @@ section {
     }
 
     .venmo .preview_box {
-        background: url('./images/venmo-container.png');
+        background: url('./images/venmo-container2.png');
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
