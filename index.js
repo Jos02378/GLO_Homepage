@@ -55,3 +55,13 @@ window.addEventListener('scroll', () => {
         navHeader.classList.remove('alternate');
     }
 })
+
+const directories = document.querySelectorAll('.hero_directory_item');
+
+directories.forEach((item) => {
+    item.addEventListener('click', () => {
+        AOS.init({
+            disable: true
+        })
+    })
+})
