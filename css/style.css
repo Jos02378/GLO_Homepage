@@ -56,7 +56,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
 
-    animation: bgAnimate 30s infinite;
+    /* animation: bgAnimate 30s infinite; */
 }
 
 @keyframes bgAnimate {
