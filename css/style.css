@@ -95,7 +95,7 @@ section {
     padding: 0px 30px;
     min-height: 630px;
 
-    background: url('./images/Interact-Background.png');
+    background: url('../images/Interact-Background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -550px;
@@ -555,7 +555,7 @@ section {
     }
     
     .zoom .preview_box {
-        background: url('./images/zoom-container2.png');
+        background: url('../images/zoom-container2.png');
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
@@ -573,7 +573,7 @@ section {
     }
 
     .doordash .preview_box {
-        background: url('./images/doordash-container2.png');
+        background: url('../images/doordash-container2.png');
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
@@ -590,7 +590,7 @@ section {
     }
 
     .uber .preview_box {
-        background: url('./images/uber-container2.png');
+        background: url('../images/uber-container2.png');
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
@@ -606,7 +606,7 @@ section {
     }
 
     .venmo .preview_box {
-        background: url('./images/venmo-container2.png');
+        background: url('../images/venmo-container2.png');
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
