@@ -305,11 +305,6 @@ section {
     .hero_title {
         font-size: 60px;
     }
-    .hero_subtitle {
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 25px;
-    }
 
     .project {
         padding: 0px 50px;
