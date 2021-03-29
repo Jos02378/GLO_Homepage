@@ -330,6 +330,10 @@ section {
         min-height: 440px;
         width: 75%;
         padding: 0px 50px;
+
+        display: grid;
+        justify-items: flex-start;
+        grid-row-gap: 20px;
     }
     .preview_logo {
         width: 65%;
@@ -458,6 +462,7 @@ section {
     .project {
         flex-direction: row;
         align-items: center;
+        min-height: 700px;
 
         background-position: unset;
     }
