@@ -45,6 +45,12 @@ section {
     position: absolute;
     content: "";
     background: linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982);
+    background: -moz-linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982); /* FF3.6+ */
+    background: -webkit-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982); /* Opera 11.10+ */
+    background: -ms-linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982); /* IE10+ */
+    background: linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982); /* W3C */
     width: 650px;
     height: 650px;
     border-radius: 50%;
