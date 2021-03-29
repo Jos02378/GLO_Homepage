@@ -39,7 +39,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 60px;
 }
 
 .hero::before {
@@ -74,6 +73,7 @@ section {
     font-weight: 400;
     letter-spacing: 1.5px;
     text-align: left;
+    margin-bottom: 40px;
 
     z-index: 1;
 }
@@ -95,7 +95,7 @@ section {
     padding: 0px 30px;
     min-height: 630px;
 
-    background: url('../images/Interact-Background.jpg');
+    background: url('../images/Interact-Background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -550px;
@@ -143,9 +143,10 @@ section {
     margin-top: 20px;
     padding-right: 60px;
 
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     line-height: 16px;
+    white-space: pre-line;
 }
 
 .project_button {
@@ -195,6 +196,7 @@ section {
     height: 60px;
     border-radius: 8px;
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     border: 0.7px solid #ffffff20;
     box-shadow: 0px 0px 20px #00000010;
 
@@ -299,19 +301,19 @@ section {
     }
 
     .hero {
-        row-gap: 20px;
         padding: 0px 100px;
     }
     .hero_title {
         font-size: 60px;
+        margin-bottom: 20px;
     }
 
     .project {
         padding: 0px 50px;
-        min-height: 850px;
+        min-height: 900px;
     }
     .project_logo {
-        width: 90%;
+        width: 80%;
     }
     .project_title {
         font-size: 34px;
@@ -325,43 +327,40 @@ section {
     }
 
     .preview_box {
-        min-height: 420px;
+        min-height: 440px;
         width: 75%;
         padding: 0px 50px;
-        row-gap: 20px;
-        justify-content: flex-start;
     }
     .preview_logo {
         width: 65%;
         height: 80px;
-        margin-top: -50px;
+        margin: -50px 0 5px;
     }
     .preview_title {
         font-size: 22px;
         font-weight: 700;
+        /* margin: 5px 0; */
     }
     .preview_desc {
         font-size: 12px;
         line-height: 24px;
+        /* margin: 5px 0;  */
     }
     .preview_button {
         padding: 10px 25px;
         font-size: 12px;
         margin-bottom: 20px;
+        /* margin: 5px 0; */
     }
     .preview_image {
-        margin-bottom: -100px;
+        margin: 5px 0 -100px;
     }
 }
 
 @media (min-width: 1025px) {
     section {
         min-height: unset;
-        height: 100vh;
-    }
-
-    .hero {
-        height: 110vh;
+        height: 600px;
     }
 
     .hero::before {
@@ -384,32 +383,9 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 10px;
         
         z-index: 1;
     }
-
-    /* .hero_directory_title {
-        background: linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982); 
-        border-radius: 15px;
-        padding: 2px;
-        backdrop-filter: blur(10px);
-
-        display: grid;
-        place-items: center;
-    }
-
-    .hero_directory_title p {
-        background: var(--fade_white2);
-        border-radius: 13px;
-        padding: 12px 40px;
-        backdrop-filter: blur(10px);
-
-        color: var(--black);
-        text-transform: lowercase;
-        font-weight: 700;
-        font-size: 14px;
-    } */
 
     .hero_directory_title {
         color: var(--black);
@@ -432,7 +408,6 @@ section {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        column-gap: 20px;
     }
 
     .hero_directory_item {
@@ -441,6 +416,7 @@ section {
 
         padding: 10px 15px;
         width: 130px;
+        margin: 0 10px;
         background: var(--black);
         border-radius: 5px;
 
@@ -480,17 +456,13 @@ section {
     }
     
     .project {
-        height: 100vh;
-        min-height: unset;
         flex-direction: row;
         align-items: center;
 
         background-position: unset;
-        /* box-shadow: 0px 0px 15px #00000020; */
     }
     .project_content {
         width: 50%;
-        row-gap: 25px;
     }
     .project_logo {
         width: 50%;
@@ -503,7 +475,6 @@ section {
     .project_desc {
         font-size: 14px;
         font-weight: 450;
-        text-align: justify;
     }
     .project_button {
         font-size: 16px;
@@ -521,9 +492,10 @@ section {
         border-radius: 0;
         box-shadow: none;
 
+        display: flex;
+        flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-start;
-        row-gap: 30px;
+        grid-row-gap: unset;
     }
     .preview_logo {
         position: absolute;
@@ -535,13 +507,16 @@ section {
     .preview_title {
         font-size: 22px;
         font-weight: 600;
+        margin: 30px 0 10px;
     }
     .preview_desc {
         font-size: 12px;
+        margin: 30px 0 0;
     }
     .preview_button {
         font-size: 14px;
         padding: 10px 25px;
+        margin: 40px 0 0;
     }
     .preview_image {
         position: absolute;
