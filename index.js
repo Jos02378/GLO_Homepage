@@ -10,11 +10,13 @@ const wrapper = document.querySelector('.wrapper');
 const disableScrolling = () => {
     const x = window.scrollX;
     const y = window.scrollY;
-    window.onscroll=function(){window.scrollTo(x, y);};
+    window.onscroll = function () {
+        window.scrollTo(x, y);
+    };
 }
 
 const enableScrolling = () => {
-    window.onscroll=function(){};
+    window.onscroll = function () {};
 }
 
 navTrigger.addEventListener('click', () => {
