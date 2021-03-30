@@ -37,7 +37,7 @@ section {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -151,7 +151,6 @@ section {
     font-size: 10px;
     font-weight: 400;
     line-height: 16px;
-    white-space: pre-line;
 }
 
 .project_button {
@@ -214,7 +213,7 @@ section {
 .preview_title {
     font-size: 18px;
     font-weight: 600;
-    margin-top: 25px;
+    line-height: 28px;
 
     align-self: flex-start;
 }
@@ -225,6 +224,11 @@ section {
     line-height: 17px;
 
     align-self: flex-start;
+}
+
+.preview_desc a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 .preview_button {
@@ -287,7 +291,7 @@ section {
     color: var(--uber);
 }
 .uber .preview_logo img {
-    width: 40%;
+    width: 50%;
 }
 
 .venmo .preview_box {
@@ -302,7 +306,7 @@ section {
 
 @media (min-width: 550px) {
     section {
-        min-height: 740px;
+        min-height: 760px;
     }
 
     .hero {
@@ -344,6 +348,7 @@ section {
         width: 65%;
         height: 80px;
         margin: -50px 0 5px;
+        justify-self: center;
     }
     .preview_title {
         font-size: 22px;
@@ -363,6 +368,17 @@ section {
     }
     .preview_image {
         margin: 5px 0 -100px;
+        justify-self: center;
+    }
+
+    .zoom .preview_logo img {
+        width: 50%;
+    }
+    .uber .preview_logo img {
+        width: 40%;
+    }
+    .venmo .preview_logo img {
+        width: 50%;
     }
 }
 
@@ -370,6 +386,10 @@ section {
     section {
         min-height: unset;
         height: 600px;
+    }
+
+    .hero {
+        align-items: center;
     }
 
     .hero::before {
@@ -515,9 +535,8 @@ section {
         border-radius: 14px;
     }
     .preview_title {
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 600;
-        margin: 30px 0 10px;
     }
     .preview_desc {
         font-size: 12px;
@@ -539,8 +558,8 @@ section {
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
-        padding: 60px 45% 0px 50px;
-        margin-top: 80px;
+        padding: 40px 45% 0px 50px;
+        margin-top: 120px;
         /* filter: drop-shadow(0px 0px 20px #4856DD60); */
     }
     .zoom .preview_logo {
@@ -548,7 +567,7 @@ section {
         top: 3%;
     }
     .zoom .preview_image {
-        right: 4%;
+        right: -6%;
         bottom: 32%;
     }
 
@@ -557,8 +576,8 @@ section {
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
-        padding: 60px 50px 0px 45% ;
-        margin-top: 30px;
+        padding: 40px 50px 0px 45% ;
+        margin-top: 100px;
     }
     .doordash .preview_logo {
         left: 10%;
@@ -575,6 +594,7 @@ section {
         background-repeat: no-repeat;
         background-position: center;
         padding: 60px 45% 0px 50px ;
+        margin-top: 90px;
     }
     .uber .preview_logo {
         right: 10%;
@@ -590,7 +610,8 @@ section {
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
-        padding: 90px 50px 0px 45% ;
+        padding: 70px 50px 0px 45% ;
+        margin-top: 60px;
     }
     .venmo .preview_logo {
         left: 10%;
@@ -599,5 +620,16 @@ section {
     .venmo .preview_image {
         left: 4%;
         top: 10%;
+    }
+}
+
+@media (min-width: 1140px) {
+    .zoom .preview_box {
+        padding: 60px 45% 0px 50px;
+    }
+
+    .zoom .preview_image {
+        right: 3%;
+        bottom: 32%;
     }
 }
